@@ -6,6 +6,10 @@ display(HTML("""<style>
 h4 {
     margin-top: 20px;
 }
+
+.widget-area .prompt .close {
+    display: none !important;
+}
 </style>"""))
 
 def create_input(q):
