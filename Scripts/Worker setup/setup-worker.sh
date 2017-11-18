@@ -2,7 +2,13 @@
 
 echo ""
 echo "Creating machine..."
-docker-machine create --driver google --google-project complete-flag-183314 --google-zone europe-west1-b --google-machine-type $2 --engine-install-url=https://web.archive.org/web/20170623081500/https://get.docker.com $1 >> provision-$1.log 2>&1
+docker-machine create \
+	--driver google \
+	--google-project complete-flag-183314 \
+	--google-zone europe-west1-b \
+	--google-machine-type $2 \
+	--google-disk-size 15 \
+	--engine-install-url=https://web.archive.org/web/20170623081500/https://get.docker.com $1 >> provision-$1.log 2>&1
 
 sleep 3
 
