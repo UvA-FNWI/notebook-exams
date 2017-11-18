@@ -4,3 +4,6 @@
 [submodule "Modules/SwarmSpawner"]
 	path = Modules/SwarmSpawner
 	url = https://github.com/jessesar/SwarmSpawner
+[submodule "Hub/notebook-hub"]
+	path = Hub/notebook-hub
+	url = git@github.com:jessesar/notebook-hub.git
