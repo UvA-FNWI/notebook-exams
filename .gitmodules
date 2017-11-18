@@ -1,0 +1,3 @@
+[submodule "Modules/jhub_cas_authenticator"]
+	path = Modules/jhub_cas_authenticator
+	url = https://github.com/jessesar/jhub_cas_authenticator
