@@ -4,6 +4,8 @@ import json
 import pandas as pd
 from tabulate import tabulate
 
+from colorama import Fore, Back, Style
+
 @click.command('exams')
 def exams():
 	data = subprocess.check_output(['gcloud', '-q', 'compute', 'ssh', 'exam-admin@hub', '--', 'cat /var/uva/exams.json' ], stderr=subprocess.STDOUT)
@@ -48,4 +50,4 @@ def students(exam_name):
 		else:
 			print "No students found."
 	else:
-		print 'Exam with name "%s" does not exist.' % exam_name
+		print Fore.RED + ('Exam with name "%s" does not exist.' % exam_name) + Style.RESET_ALL
