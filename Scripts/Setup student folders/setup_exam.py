@@ -1,11 +1,11 @@
-#!/usr/bin/python
-
 import pandas as pd
 import sys
 import json
 import hashlib
 from subprocess import call
 from distutils.dir_util import copy_tree
+
+import click
 
 def execute(c):
 	call(c.split())
@@ -51,19 +51,38 @@ def setup_student(student):
 	
 	print 
 
-exam_name, students_file, exam_file = sys.argv[1:]
-exam_location = '/'.join(exam_file.split('/')[:-1])
+@click.command('setup', short_help='Setup student home folders with exam')
+@click.option('--title', 
+				show_default=True,
+				default='Exam',
+				help='Title of the exam')
+@click.option('--students', 
+				show_default=True,
+				default='students.xlsx',
+				help='DataNose .xlsx export that containing all students')
+@click.option('--exam', 
+				show_default=True,
+				default='exam.zip',
+				help='Zip file containing the exam')
+def setup(title, students, exam):
+	"""Sets up student home folders and copies exam files."""
 
-execute('rm -rf '+ exam_location +'/exam')
+	exam_name, students_file, exam_file = sys.argv[1:]
+	exam_location = '/'.join(exam_file.split('/')[:-1])
 
-print 'Unzipping exam... ('+ exam_file +' to '+ exam_location +'/exam)'
-execute('unzip -j '+ exam_file +' -d '+ exam_location +'/exam')
+	execute('rm -rf '+ exam_location +'/exam')
 
-students = pd.read_excel(students_file)
-del students['UvAnetID']
-del students['Gender']
-del students['Programme']
-del students['PreviousAttempts']
+	print 'Unzipping exam... ('+ exam_file +' to '+ exam_location +'/exam)'
+	execute('unzip -j '+ exam_file +' -d '+ exam_location +'/exam')
 
-for i, student in students.iterrows():
-	setup_student(student)
+	students = pd.read_excel(students_file)
+	del students['UvAnetID']
+	del students['Gender']
+	del students['Programme']
+	del students['PreviousAttempts']
+
+	for i, student in students.iterrows():
+		setup_student(student)
+
+if __name__ == '__main__':
+    setup()

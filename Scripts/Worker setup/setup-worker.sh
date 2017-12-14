@@ -10,7 +10,7 @@ docker-machine create \
 	--google-disk-size 15 \
 	--engine-install-url=https://web.archive.org/web/20170623081500/https://get.docker.com $1 >> provision-$1.log 2>&1
 
-sleep 3
+sleep 10
 
 echo ""
 echo "Installing NFS..."

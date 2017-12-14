@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        notebook-exam=cli:cli
+    

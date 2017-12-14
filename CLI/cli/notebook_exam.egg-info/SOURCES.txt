@@ -1,0 +1,6 @@
+notebook_exam.egg-info/PKG-INFO
+notebook_exam.egg-info/SOURCES.txt
+notebook_exam.egg-info/dependency_links.txt
+notebook_exam.egg-info/entry_points.txt
+notebook_exam.egg-info/requires.txt
+notebook_exam.egg-info/top_level.txt

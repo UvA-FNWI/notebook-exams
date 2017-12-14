@@ -7,3 +7,6 @@
 [submodule "Hub/notebook-hub"]
 	path = Hub/notebook-hub
 	url = git@github.com:jessesar/notebook-hub.git
+[submodule "Modules/uva-questions"]
+	path = Modules/uva-questions
+	url = https://github.com/jessesar/uva-questions
