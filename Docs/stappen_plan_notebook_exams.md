@@ -9,11 +9,11 @@ WORK IN PROGRESS
 3. Maak antwoordmodel, en test en run.
 4. Geef elke vraag een aantal punten, wat je aangeeft in het `<antwoord>` veld met attribuut `points=REAL`.
 3. Maak de bijbehorende "Docker file"
-	4. Welke modules heb je nodig bovenop een stndaard Anaconda Python installatie?
+	1. Welke modules heb je nodig bovenop een stndaard Anaconda Python installatie?
 	5. Wat moet er verder ingesteld worden?
 	6. We kunnen de Docker file van te voren bekend maken via Dockerhub zodat men thuis alvast kan oefenen met de omgeving die je op het tentamen hebt.
 4. *Test*
-	5. peer review
+	1. peer review
 	6. test om te zien hoeveel resources elke student moet krijgen tijdens tentamen
 
 ## 2. Set up servers
