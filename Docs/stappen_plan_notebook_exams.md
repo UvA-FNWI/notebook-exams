@@ -33,6 +33,7 @@ WORK IN PROGRESS
 
 3. Studenten opzetten: `notebook-exam setup students EXAM_NAME STUDENTS_FILE`
 	* Zet de studentmappen op, voert permissies door en kopieert tentamenbestanden naar deze mappen.
+	* STUDENTS_FILE is het excel bestand dat je van datanose download (moet dit formaat hebben)
 
 4. Checken: `notebook-exam list students EXAM_NAME`
 
