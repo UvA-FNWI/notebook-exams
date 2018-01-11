@@ -18,7 +18,7 @@ Voor meer informatie over toekomstige versies, zie de roadmap.
 Om alle benodigde software en modules te installeren dient het onderstaande commando uitgevoerd te worden in de terminal.
 
 ```
-curl -q https://raw.githubusercontent.com/jessesar/notebook-exam-cli/master/install.sh?nocache | bash
+curl -s https://raw.githubusercontent.com/jessesar/notebook-exam-cli/master/install.sh?nocache | bash
 ```
 
 _Dit installatiescript kan op dit moment alleen nog gebruikt worden op systemen met bash-ondersteuning, zoals Linux en Mac OS X._
