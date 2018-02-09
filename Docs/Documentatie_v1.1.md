@@ -32,13 +32,25 @@ In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn vol
 
 ### 1. Tentamen lokaal opstellen
 1. Met het opstellen van een tentamen wordt het voorbereiden van de tentamen-notebook en het definiëren/specificeren van vragen en antwoorden bedoeld.
-2. Om vragen/antwoorden te definiëren in een notebook, kan in een Markdown-cell gebruik worden gemaakt van de `<answer>`-tag. De inhoud van de tag kan leeg zijn (niet automatisch nagekeken) of Python-code die evalueert naar `True` of `False`, waarin `X` het antwoord is. Op de plek van de tag verschijnt een invoermogelijkheid voor de student (mits het geen open vraag is).  
+2. Om vragen/antwoorden te definiëren in een notebook, kan in een Markdown-cell gebruik worden gemaakt van de `<answer>`-tag. 
+	* **Types:**
+	* `oneliner` (standaard) – een invulveld van één regel
+	* `long` – een invulveld van meerdere regels
+	* `markdown` – geen invulveld, wel een punten-aanduiding. Bijvoorbeeld voor vragen die een antwoord in Markdown vereisen.
+	* `code` – geen invulveld, maar voegt automatisch een code-cell er onder in.
+	* **Attributen:**
+	* `id` (verplicht) – een unieke (onzichtbare) naam voor de vraag
+	* `points` (standaard `1`) – het aantal punten dat de vraag waard is
+	* `auto-score` (`true` of `false`, standaard `false`) – of de vraag automatisch nagekeken dient te worden. Slechts `oneliner`-vragen kunnen automatisch nagekeken worden. 
+	* **Inhoud van de tag:**
+	* Wanneer auto-score `false` is, kan de inhoud van de `answer`-tag een richtlijn voor het antwoord zijn die bij het nakijken wordt weergegeven.
+	* Wanneer auto-score `true` is, dient de inhoud van de `answer`-tag een specificatie van het antwoord te zijn: Python-code die evalueert naar `True` of `False`, waarin `X` het antwoord is.
    * **Voorbeelden:**
-	* Automatisch nagekeken vraag (twee punten): `<answer id="vraag-1" points="2">X == 'juiste antwoord'</answer>`
-	* Niet automatisch nagekeken vraag: `<answer id="vraag-2" />`
-	* Vraag met lang antwoord (meerdere regels): `<answer id="vraag-3" type="long" />`
-	* Open vraag (bijv. code): `<answer id="code-vraag" type="open" />`
-	* Bij het weglaten van het `points`-attribuut is de vraag standaard één punt waard.  
+   * Simpele invulvraag, niet automatisch nagekeken, geen antwoord-richtlijn: `<answer id="vraag-1" />`
+   * Simpele invulvraag, 3 punten, wel automatisch nagekeken: `<answer id="vraag-2" points="3" auto-score="true">X == 5</answer>`
+	* Invulvraag met lang antwoord (meerdere regels): `<answer id="vraag-3" type="long" />`
+	* Markdown-vraag: `<answer id="markdown-vraag" type="markdown" />`
+	* Code-vraag, code-cell wordt automatisch ingevoegd: `<answer id="code-vraag" type="code" />` 
 	
 	* **Let er bij het specificeren van de antwoord-test op dat:**
 		* ...het antwoord `X` een string is.
