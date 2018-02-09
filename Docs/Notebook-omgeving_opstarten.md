@@ -8,4 +8,4 @@ In dit document wordt uitgelegd hoe je een notebook-omgeving in Docker kan opsta
 	* **Linux**: gebruik dit commando in de terminal: `curl -fsSL get.docker.com | bash`
 
 2. Installeer de `uva-notebook`-module met: `sudo pip install uva-notebook`
-3. Zorg dat Docker draait en start de notebook-omgeving met: `uva-notebook start`
+3. Zorg dat Docker draait en start de notebook-omgeving in de folder waarin je met Python wil gaan werken met: `uva-notebook start`
