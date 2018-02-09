@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+uva_notebook/__init__.py
+uva_notebook.egg-info/PKG-INFO
+uva_notebook.egg-info/SOURCES.txt
+uva_notebook.egg-info/dependency_links.txt
+uva_notebook.egg-info/entry_points.txt
+uva_notebook.egg-info/requires.txt
+uva_notebook.egg-info/top_level.txt
+uva_notebook/scripts/run-notebook.sh
