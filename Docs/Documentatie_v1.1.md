@@ -27,7 +27,7 @@ _Dit installatiescript kan op dit moment alleen nog gebruikt worden op systemen 
 
 Het notebook-exam-platform kan vervolgens worden aangesproken met het commando `notebook-exam`. Gebruik `notebook-exam --help` om meer informatie te krijgen over de beschikbare commando's.
 
-## Stap voor stap een tentamen afnemen
+## Voorbereiding
 In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn volledigheid kan worden afgenomen met behulp van het notebook-exam-platform.
 
 ### 1. Tentamen lokaal opstellen
@@ -57,7 +57,14 @@ In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn vol
 
 ---
 
-### 2. Tentamen opzetten op Hub
+## A. Tentamen lokaal afnemen
+
+### 2. Tentamen afnemen
+Het zip-bestand met de studentversie dat is voortgekomen uit stap 1.4 kan uitgepakt geplaatst worden op het systeem waar het tentamen op wordt afgenomen (bijv. de tentamencomputers). Na afloop van het tentamen kan verder gegaan worden bij stap 4.
+
+## B. Tentamen afnemen op Hub
+
+### 2. Tentamen opzetten
 
 1. Tentamen opzetten: `notebook-exam setup exam EXAM_NAME EXAM_FILE`
 	* Plaatst het tentamen op de hub, pakt het uit en slaat de tentamen-definitie op.
@@ -85,14 +92,18 @@ In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn vol
 * Extra studenten toevoegen:
 	* Op dit moment kan hiervoor gewoon `notebook-exam setup students EXAM_NAME STUDENTS_FILE` gebruikt worden. De bestaande studenten worden niet overschreven.
 
+* Na afloop inzendingen van studenten verzamelen: `notebook-exam grade collect-submissions EXAM_NAME`
+	* Alle notebooks en de DataFrame met gesloten antwoorden worden gedownload en in de map 'all-submissions' geplaatst.
+
 ---
+
+## Nakijken
 
 ### 4. Tentamen nakijken
 
-1. Inzendingen van studenten verzamelen: `notebook-exam grade collect-submissions EXAM_NAME`
-	* Alle notebooks en de DataFrame met gesloten antwoorden worden gedownload en in de map 'all-submissions' geplaatst.
+1. Bij afname via de Hub zijn in de vorige stap alle inzendingen verzameld en in de map 'all-submissions' geplaatst. Bij handmatige afname worden de inzendingen via bijvoorbeeld TestVision of Blackboard opgehaald en met de hand op de juiste plek geplaatst.
 2. Inzendingen over nakijkers verdelen: `notebook-exam grade divide-submissions SUBMISSIONS_FOLDER GRADERS`
-	* `SUBMISSIONS_FOLDER` is de map die in de vorige stap is aangemaakt.
+	* `SUBMISSIONS_FOLDER` is de map met inzendingen.
 	* `GRADERS` is een komma-gescheiden lijst van nakijkers. Voorbeeld: jantje,pietje
 	* Er wordt een nieuwe map gemaakt (`divided-submissions`) met daarin één map voor iedere nakijker.
 3. Voor het nakijken is een answer-model.json-bestand nodig. Dit bestand komt voort uit `notebook-exam prepare student-notebook`. Het bestand dient geplaatst te worden in de `SUBMISSIONS_FOLDER`.
