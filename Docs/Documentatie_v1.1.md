@@ -63,7 +63,8 @@ In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn vol
    * Het omzetten in een studentversie kan met het volgende commando gedaan worden: `notebook-exam prepare student-notebook NOTEBOOK_FILE.ipynb`
    * Na het uitvoeren van dit commando zal er een nieuwe map met de titel van het notebook gemaakt zijn. In deze map bevinden zich twee mappen: `Teacher` en `Student`.  
    * De map `Student` bevat alles wat de student nodig heeft om het tentamen te maken (de notebook en een bestand met vraag-definities, die later gebruikt wordt om de juiste invulvelden te weergeven).  
-   * Ook is er een zip-bestand aangemaakt met de titel van het notebook; dit zip-bestand heeft dezelfde inhoud als de `Student`-map en kan later gebruikt worden voor het opzetten van het tentamen op de Hub.
+   * Ook is er een zip-bestand aangemaakt met de titel van het notebook; dit zip-bestand heeft dezelfde inhoud als de `Student`-map en kan later gebruikt worden voor het opzetten van het tentamen op de Hub of voor het aanleveren van het tentamen aan bijv. de tentamenzaal.
+   * De map `Teacher` bevat het notebook dat hierboven is gebruikt als 'template', en een map genaamd `Grading`. Deze map bevat een map `submissions` met daarin het voor nakijken benodigde antwoordmodel. In deze submissions-map kunnen handmatige inzendingen afkomstig uit bijvoorbeeld Blackboard worden geplaatst. Dit komt later aan bod.
 5. Tenslotte is het belangrijk om de studentversie te testen. Navigeer op de commandolijn naar de `Student`-map en start daar de virtuele notebook-omgeving: `notebook-exam notebook start`. Dit kan de eerste keer een aantal minuten in beslag nemen.
 6. Een Jupyter notebook-omgeving opent in de browser; dit is de omgeving waar studenten ook in zullen werken. Hierin kan de studentversie van het tentamen geopend worden om te checken of alles correct werkt. Als er wijzigingen nodig zijn, begin dan weer bij stap 2.
 
@@ -71,12 +72,12 @@ In deze sectie zal stap voor stap beschreven worden hoe een tentamen in zijn vol
 
 ## A. Tentamen lokaal afnemen
 
-### 2. Tentamen afnemen
+### A2. Tentamen afnemen
 Het zip-bestand met de studentversie dat is voortgekomen uit stap 1.4 kan uitgepakt geplaatst worden op het systeem waar het tentamen op wordt afgenomen (bijv. de tentamencomputers). Na afloop van het tentamen kan verder gegaan worden bij stap 4.
 
 ## B. Tentamen afnemen op Hub
 
-### 2. Tentamen opzetten
+### B2. Tentamen opzetten
 
 1. Tentamen opzetten: `notebook-exam setup exam EXAM_NAME EXAM_FILE`
 	* Plaatst het tentamen op de hub, pakt het uit en slaat de tentamen-definitie op.
@@ -94,7 +95,7 @@ Het zip-bestand met de studentversie dat is voortgekomen uit stap 1.4 kan uitgep
 
 ---
 
-### 3. Tentamen afnemen
+### B3. Tentamen afnemen
 
 * Meer documentatie over cluster toevoegen
 * Cluster opzetten: `notebook-exam provision cluster NUMBER_OF_WORKERS WORKER_FLAVOR`
@@ -105,7 +106,7 @@ Het zip-bestand met de studentversie dat is voortgekomen uit stap 1.4 kan uitgep
 	* Op dit moment kan hiervoor gewoon `notebook-exam setup students EXAM_NAME STUDENTS_FILE` gebruikt worden. De bestaande studenten worden niet overschreven.
 
 * Na afloop inzendingen van studenten verzamelen: `notebook-exam grade collect-submissions EXAM_NAME`
-	* Alle notebooks en de DataFrame met gesloten antwoorden worden gedownload en in de map 'all-submissions' geplaatst.
+	* Alle notebooks en de DataFrame met antwoorden worden gedownload en in de map 'hub-submissions' geplaatst.
 
 ---
 
@@ -113,20 +114,28 @@ Het zip-bestand met de studentversie dat is voortgekomen uit stap 1.4 kan uitgep
 
 ### 4. Tentamen nakijken
 
-1. Bij afname via de Hub zijn in de vorige stap alle inzendingen verzameld en in de map 'all-submissions' geplaatst. Bij handmatige afname worden de inzendingen via bijvoorbeeld TestVision of Blackboard opgehaald en met de hand op de juiste plek geplaatst.
-2. Inzendingen over nakijkers verdelen: `notebook-exam grade divide-submissions SUBMISSIONS_FOLDER GRADERS`
-	* `SUBMISSIONS_FOLDER` is de map met inzendingen.
+1. Inzendingen verzamelen:
+   * Bij handmatige afname (A) worden de inzendingen via bijvoorbeeld TestVision of Blackboard opgehaald. De notebook-bestanden, of mappen met daarin notebook-bestanden, kunnen in de `submissions`-map uit stap 1.4 geplaatst worden.
+   * Bij afname via de Hub (B) zijn alle inzendingen in de vorige stap automatisch verzameld en in de map `hub-submissions` geplaatst.
+2. Automatisch antwoorden nakijken (optioneel): `notebook-exam grade auto-score SUBMISSIONS_FOLDER ANSWER_MODEL_FILE`
+	* `ANSWER_MODEL_FILE` is het bestand `answer-model.json` dat zich in de inzendingen-map zal bevinden.
+	* Scores worden automatisch bepaald aan de hand van het antwoordmodel en de scores worden opgeslagen.
+3. Inzendingen over nakijkers verdelen: `notebook-exam grade divide-submissions SUBMISSIONS_FOLDER GRADERS`
+	* `SUBMISSIONS_FOLDER` is de map met inzendingen. Dit is dus `submissions` in het geval van handmatige afname (A) of `hub-submissions` in het geval van afname via de Hub (B).
 	* `GRADERS` is een komma-gescheiden lijst van nakijkers. Voorbeeld: jantje,pietje
 	* Er wordt een nieuwe map gemaakt (`divided-submissions`) met daarin één map voor iedere nakijker.
-3. Voor het nakijken is een answer-model.json-bestand nodig. Dit bestand komt voort uit `notebook-exam prepare student-notebook`. Het bestand dient geplaatst te worden in de `SUBMISSIONS_FOLDER`.
-3. Automatisch antwoorden nakijken (optioneel): `notebook-exam grade auto-score SUBMISSIONS_FOLDER ANSWER_MODEL_FILE`
-	* `ANSWER_MODEL_FILE` is het hierboven genoemde answer-model.json
-4. Er kan nu worden nagekeken in de notebooks.
+	* Elke nakijkmap bevat alles wat voor nakijken nodig is: een deel van de notebooks, antwoordbestanden en het eventuele antwoordmodel. Een nakijker kan met slechts zijn of haar nakijkmap in bezit dus gewoon nakijken.
+4. Er kan nu worden nagekeken in de notebooks. Dit wordt ook gedaan met de notebook-omgeving uit stap 1.5.
+	* Navigeer naar je eigen nakijk-map en voer uit: `notebook-exam notebook start`
+	* De notebook-omgeving start in een nieuw venster.
 	* Het is belangrijk om altijd eerst de cell met `import questions` te draaien (meestal de bovenste); door dit te doen worden de antwoorden en scores van de student ingeladen.
+	* Hierna zal het systeem proberen het studentnummer dat bij de inzending hoort te herkennen. Controleer dit en corrigeer het waar nodig.
 	* Scores die worden ingevuld worden automatisch opgeslagen.
 	* Eventuele automatische scores kunnen overschreven worden.
-5. Na het nakijken kunnen de resultaten van de verschillende nakijkers weer verzameld worden: `notebook-exam grade merge-results divided-submissions`
-	* De resultaten worden opgeslagen in all-results.csv. Hierop kan verdere analyse plaatsvinden.
+	* Alle scores worden opgeslagen in `student-answers.csv`.
+5. Na het nakijken kunnen de resultaten van de verschillende nakijkers (de losse `student-answers.csv`-bestanden) weer verzameld en samengevoegd worden: `notebook-exam grade merge-results divided-submissions`
+	* `divided-submissions` is de map met inzendingen verdeeld over nakijkers. Zorg dat al het nagekeken werk daar nog/opnieuw in staat.
+	* De resultaten worden opgeslagen in `all-results.csv`. Hierop kan verdere analyse plaatsvinden.
 6. Als laatste stap kunnen de cijfers berekend worden: `notebook-exam grade calculate-grades RESULTS_FILE MAXIMUM_SCORE`
 	* `RESULTS_FILE` is het resultatenbestand uit de vorige stap.
 	* `MAXIMUM_SCORE` is de hoogste haalbare score.
