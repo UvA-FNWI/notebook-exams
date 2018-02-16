@@ -38,3 +38,18 @@ Als alles goed gaat kan vervolgens op `http://localhost:8123/` de notebook-omgev
 Mocht het installeren van Docker op de tentamen-computers absoluut onmogelijk blijken, dan is het alternatief om de laatste versie van Anaconda te installeren. Anaconda is een gemakkelijke manier om Python en een flink aantal veelgebruikte modules op een gebruiksvriendelijke manier te installeren. In dat geval draait Python, en de code van studenten, dus wel direct op de tentamen-computer.
 
 Anaconda voor Python 3.6 kan geïnstalleerd worden met: [https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe)
+
+Na het succesvol installeren van Anaconda dienen de volgende commando's te worden uitgevoerd om voor tentamens benodigde modules te installeren:
+
+```
+pip install https://github.com/jessesar/uva-questions/archive/master.zip
+pip3 install https://github.com/jessesar/uva-questions/archive/master.zip
+```
+
+Afhankelijk van de Anaconda-versie die is geïnstalleerd werkt één van beide commando’s of werken ze allebei.
+Als het goed is wordt Jupyter vanzelf mee-geïnstalleerd met Anaconda. Dan zou na alle installaties het volgende commando moeten werken:
+
+`jupyter notebook`
+
+Als alles klopt opent hierdoor een browser met daarin de Jupyter-omgeving. Als dat lukt zijn we klaar om te testen.  
+Voor de student zou het mooi zijn als er uiteindelijk een soort snelkoppeling op het bureaublad kan komen die bovenstaand commando uitvoert om Jupyter op te starten. Het alternatief zou zijn dat de student dit zelf typt in cmd.
