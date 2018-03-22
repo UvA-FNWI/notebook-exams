@@ -5,17 +5,17 @@ Vanaf februari 2018 is het mogelijk om Jupyter Notebooks te draaien op de beveil
 * Studenten zijn niet meer genoodzaakt hun eigen laptop mee te nemen, met alle risico's die daarbij horen
 * De tentamenbeheerder kan het scherm van alle studenten in de gaten houden en zo bijvoorbeeld voorkomen dat een student antwoorden opzoekt; sterker nog, de tentamenbeheerder kan ervoor zorgen dat het internet überhaupt niet geraadpleegd kan worden
 * Studenten kunnen geen eigen aanpassingen/extensies/modules installeren die schadelijk kunnen zijn voor het systeem
-* _De gemaakte tentamens worden staan op een UvA-systeem waar ook een reservekopie van gemaakt wordt_?
+* De gemaakte tentamens worden staan op een UvA-systeem waar ook een reservekopie van gemaakt wordt
 
 ## Setup
-Op elke computer is Anaconda geïnstalleerd. De installatie bevat het volgende:
+Op elke computer is Anaconda geïnstalleerd. De installatie bevat in ieder geval het volgende:
 
 * Python 3.6
 * Jupyter Notebook
-* ... lijst met modules (wachten op Rob)
+* Zie voor het volledige module-overzicht het document 'Beschikbare modules tentamenzaal'.
 
 ### Wijzigingen
-... hoe modules te updaten/toevoegen
+Om wijzigigingen aan de setup door te voeren, bijvoorbeeld het updaten of toevoegen van een module, dient contact opgenomen te worden met `apc-icts@uva.nl`. Een aanvraag kan door hen doorgevoerd worden, om daarna de nieuwe versie van de setup over alle tentamencomputers te verspreiden.
 
 ## Voorbereiding
 
