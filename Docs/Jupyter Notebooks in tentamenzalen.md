@@ -5,7 +5,7 @@ Vanaf februari 2018 is het mogelijk om Jupyter Notebooks te draaien op de beveil
 * Studenten zijn niet meer genoodzaakt hun eigen laptop mee te nemen, met alle risico's die daarbij horen
 * De tentamenbeheerder kan het scherm van alle studenten in de gaten houden en zo bijvoorbeeld voorkomen dat een student antwoorden opzoekt; sterker nog, de tentamenbeheerder kan ervoor zorgen dat het internet überhaupt niet geraadpleegd kan worden
 * Studenten kunnen geen eigen aanpassingen/extensies/modules installeren die schadelijk kunnen zijn voor het systeem
-* De gemaakte tentamens worden staan op een UvA-systeem waar ook een reservekopie van gemaakt wordt
+* De gemaakte tentamens staan op een UvA-systeem waar ook een reservekopie van gemaakt wordt
 
 ## Setup
 Op elke computer is Anaconda geïnstalleerd. De installatie bevat in ieder geval het volgende:
