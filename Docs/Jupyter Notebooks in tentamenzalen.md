@@ -15,7 +15,7 @@ Op elke computer is Anaconda geïnstalleerd. De installatie bevat in ieder geval
 * Zie voor het volledige module-overzicht het document 'Beschikbare modules tentamenzaal'.
 
 ### Wijzigingen
-Om wijzigigingen aan de setup door te voeren, bijvoorbeeld het updaten of toevoegen van een module, dient contact opgenomen te worden met `apc-icts@uva.nl`. Een aanvraag kan door hen doorgevoerd worden, om daarna de nieuwe versie van de setup over alle tentamencomputers te verspreiden.
+Om wijzigingen aan de setup door te voeren, bijvoorbeeld het updaten of toevoegen van een module, dient contact opgenomen te worden met `apc-icts@uva.nl`. Een aanvraag kan door hen doorgevoerd worden, om daarna de nieuwe versie van de setup over alle tentamencomputers te verspreiden.
 
 ## Voorbereiding
 
@@ -23,7 +23,7 @@ Voorafgaand aan het tentamen zijn de volgende punten van belang:
 
 * Controleer aan de hand van bovenstaande lijst of de modules die nodig zijn voor het maken van het tentamen aanwezig zijn. Eventueel kunnen modules worden geïnstalleerd of geupdate
 * Stuur de bestanden die nodig zijn voor het tentamen, dus het notebook-bestand maar ook eventuele databestanden, ruim voor het tentamen naar `wpo-toetsplek-icts@uva.nl`.
-* De snelkoppelingen die onder 'Tentamenafname' worden besproken kunnen gevonden worden in het tentamenprofiel voor het tentamen Data Science van 27 februari 2018.
+* De snelkoppelingen die onder 'Tentamenafname' worden besproken kunnen door WPO-toetsplek gevonden worden in het tentamenprofiel voor het tentamen Data Science van 27 februari 2018.
 
 ## Tentamenafname
 
