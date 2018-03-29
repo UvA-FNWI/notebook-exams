@@ -1,0 +1,76 @@
+[DbAssignmentAddApp | ERROR] No assignment id provided.
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID '{assignment_id}': {'duedate': None}
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[DbAssignmentAddApp | ERROR] Exception while loading config file /Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/ipython_genutils/py3compat.py", line 288, in execfile
+        builtin_mod.execfile(filename, *where)
+      File "/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py", line 4, in <module>
+        c.Exchange.course_id = course_id
+    NameError: name 'course_id' is not defined
+[DbAssignmentAddApp | ERROR] Exception while loading config file /Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/ipython_genutils/py3compat.py", line 288, in execfile
+        builtin_mod.execfile(filename, *where)
+      File "/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py", line 4, in <module>
+        c.Exchange.course_id = course_id
+    NameError: name 'course_id' is not defined
+[DbAssignmentApp | ERROR] Exception while loading config file /Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/ipython_genutils/py3compat.py", line 288, in execfile
+        builtin_mod.execfile(filename, *where)
+      File "/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py", line 4, in <module>
+        c.Exchange.course_id = course_id
+    NameError: name 'course_id' is not defined
+[DbApp | ERROR] Exception while loading config file /Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/ipython_genutils/py3compat.py", line 288, in execfile
+        builtin_mod.execfile(filename, *where)
+      File "/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py", line 4, in <module>
+        c.Exchange.course_id = course_id
+    NameError: name 'course_id' is not defined
+[NbGraderApp | ERROR] Exception while loading config file /Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py
+    Traceback (most recent call last):
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/application.py", line 562, in _load_config_files
+        config = loader.load_config()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 457, in load_config
+        self._read_file_as_dict()
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/traitlets/config/loader.py", line 489, in _read_file_as_dict
+        py3compat.execfile(conf_filename, namespace)
+      File "/Users/Jesse/anaconda/lib/python2.7/site-packages/ipython_genutils/py3compat.py", line 288, in execfile
+        builtin_mod.execfile(filename, *where)
+      File "/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/nbgrader_config.py", line 4, in <module>
+        c.Exchange.course_id = course_id
+    NameError: name 'course_id' is not defined
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'tentamen': {'duedate': None}
+[AutogradeApp | ERROR] An assignment id must be specified, either as an argument or with --assignment
+[AutogradeApp | ERROR] No notebooks were matched by '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/submitted/*/tentamen'
+[AutogradeApp | ERROR] No notebooks were matched by '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/submitted/*/tentamen'
