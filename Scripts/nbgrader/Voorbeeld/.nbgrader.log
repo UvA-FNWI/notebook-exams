@@ -220,3 +220,9 @@
 [NotebookApp | INFO] netwerkanalyse ps1
 [NotebookApp | INFO] Saving file at /nbgrader workflow.ipynb
 [NotebookApp | INFO] Saving file at /nbgrader workflow.ipynb
+[NotebookApp | INFO] Starting buffering for af73bde4-6789-477d-ab2f-47faa360253f:E23A1A103FE546B3BB486979B21736F5
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] received signal 2, stopping
+[NotebookApp | INFO] Shutting down 2 kernels
+[NotebookApp | INFO] Kernel shutdown: 1a189314-9b11-4459-8a41-2f6032d6703c
+[NotebookApp | INFO] Kernel shutdown: af73bde4-6789-477d-ab2f-47faa360253f
