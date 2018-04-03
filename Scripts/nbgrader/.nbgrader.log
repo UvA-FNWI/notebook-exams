@@ -803,3 +803,52 @@
 [NotebookApp | INFO] Kernel started: 682f3909-c755-4f9c-8fc5-c966da25172a
 [NotebookApp | INFO] Adapting to protocol v5.1 for kernel 682f3909-c755-4f9c-8fc5-c966da25172a
 [NotebookApp | INFO] Starting buffering for 682f3909-c755-4f9c-8fc5-c966da25172a:B688B66FF2EF49978DC67FE0BE4383F3
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 682f3909-c755-4f9c-8fc5-c966da25172a
+[NotebookApp | INFO] Saving file at /nbgrader workflow.ipynb
+[NotebookApp | INFO] Starting buffering for 682f3909-c755-4f9c-8fc5-c966da25172a:A174138F8943417F894454E9B2017500
+[NotebookApp | INFO] Kernel started: e347e4d2-b180-4976-a3b2-b498e38848d9
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel e347e4d2-b180-4976-a3b2-b498e38848d9
+[NotebookApp | INFO] Creating new notebook in /Voorbeeld/source/tentamen1
+[NotebookApp | INFO] Kernel started: fb4a3f04-cd49-4245-9165-e21c4df021f0
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel fb4a3f04-cd49-4245-9165-e21c4df021f0
+[NotebookApp | INFO] Saving file at /Voorbeeld/nbgrader workflow.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Validating '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/Voorbeeld/source/tentamen1/Untitled.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Validating '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/Voorbeeld/source/tentamen1/Untitled.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Validating '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/Voorbeeld/source/tentamen1/Untitled.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Validating '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/Voorbeeld/source/tentamen1/Untitled.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Validating '/Users/Jesse/Dropbox/Notebook-exams/notebook-exams/Scripts/nbgrader/Voorbeeld/source/tentamen1/Untitled.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Voorbeeld/source/tentamen1/Tentamen1.ipynb
+[NotebookApp | INFO] Released assignments:
+[NotebookApp | INFO] netwerkanalyse ps1 (already downloaded)
+[NotebookApp | INFO] Released assignments:
+[NotebookApp | INFO] netwerkanalyse ps1 (already downloaded)
+[NotebookApp | INFO] Released assignments:
+[NotebookApp | INFO] netwerkanalyse ps1 (already downloaded)
+[NotebookApp | INFO] Released assignments:
+[NotebookApp | INFO] netwerkanalyse ps1 (already downloaded)
+[NotebookApp | INFO] Released assignments:
+[NotebookApp | INFO] netwerkanalyse ps1 (already downloaded)
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 5 kernels
+[NotebookApp | INFO] Kernel shutdown: bab4fcc3-f44b-4f92-baf7-9349d169349c
+[NotebookApp | INFO] Kernel shutdown: 682f3909-c755-4f9c-8fc5-c966da25172a
+[NotebookApp | INFO] Kernel shutdown: fb4a3f04-cd49-4245-9165-e21c4df021f0
+[NotebookApp | INFO] Kernel shutdown: 071e435d-e689-4bc3-9af7-4ad67161f465
+[NotebookApp | INFO] Kernel shutdown: e347e4d2-b180-4976-a3b2-b498e38848d9
