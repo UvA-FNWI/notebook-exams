@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: uva-jhub-cas-authenticator
+Version: 1.0
+Summary: CAS Authenticator: An Authenticator for Jupyterhub that authenticates against an external CAS service.
+Home-page: https://github.com/cwaldbieser/jhub_cas_authenticator
+Author: Carl (https://github.com/cwaldbieser)
+Author-email: UNKNOWN
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+version.py
+jhub_cas_authenticator/__init__.py
+jhub_cas_authenticator/cas_auth.py
+uva_jhub_cas_authenticator.egg-info/PKG-INFO
+uva_jhub_cas_authenticator.egg-info/SOURCES.txt
+uva_jhub_cas_authenticator.egg-info/dependency_links.txt
+uva_jhub_cas_authenticator.egg-info/requires.txt
+uva_jhub_cas_authenticator.egg-info/top_level.txt

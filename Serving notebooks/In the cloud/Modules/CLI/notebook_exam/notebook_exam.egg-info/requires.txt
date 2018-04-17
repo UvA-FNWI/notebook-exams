@@ -1,0 +1,5 @@
+Click
+tabulate==0.8.2
+pandas
+colorama
+pysftp
