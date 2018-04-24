@@ -7,7 +7,7 @@ Next to the TestVision exams, students can use a notebook during the exam, simil
 In this short note we describe three ways in which the notebooks can be used during exams. Links to additional material are provided as well.
 
 #### Notebook exam github account
-All information on the notebook exams can be found at <>.
+All information on the notebook exams can be found at <https://github.com/UvA-FNWI/notebook-exams>.
 
 #### Using notebooks during exams
 
@@ -49,7 +49,7 @@ Typically, the exam consists of a TestVision exam, a notebook with exam material
 * All data about grading is stored in an intricate SQL lite database, but is easily exported to a spreadsheet with schema: `student id; question id; regular points; extra points`, allowing for quick calculations of the final grades, kappa measures and easy adjustments, weightings, etc.
 
 ###### NBgrader How to 
-A detailed step by step plan for the NBgrader setup is available at <>. This plan describes all steps, from creating the exam (starting from a template-example), creating the student version, getting it on the IWO computers, collecting the exams and putting them in the nbgrading system, auto and manual grading and finally computing the grades and publishing them in Blackboard/Canvas.
+A detailed step by step plan for the NBgrader setup is available at <https://github.com/UvA-FNWI/notebook-exams/blob/master/Using_notebooks_for_exams/Using_nbgrader/nbgrader_workflow.ipynb>. This plan describes all steps, from creating the exam (starting from a template-example), creating the student version, getting it on the IWO computers, collecting the exams and putting them in the nbgrading system, auto and manual grading and finally computing the grades and publishing them in Blackboard/Canvas.
 
 
 
